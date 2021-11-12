@@ -1,6 +1,8 @@
 # Audio-Manipulations-
 This repository contains code to manipulate audio signals in Julia
 
+These audio manipulations are done using the DSP (Digital Signal Processing) package in Julia.
+
 The file "Julia Audio Signal Manipulations" contains the various audio filtering using convolution methods. It includes samples for, 
   - **creating a smoothing effect on the audio.**
     In smoothing, the data points of a signal are modified so that individual points that are higher than the immediately adjacent points (presumably because of noise) are reduced, and points that are lower than the adjacent points are increased. This naturally leads to a smoother signal (and a slower step response to signal changes). As long as the true underlying signal is actually smooth, then the true signal will not be much distorted by smoothing, but the high frequency noise will be reduced.
